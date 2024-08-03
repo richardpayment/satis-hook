@@ -1,0 +1,14 @@
+# Composer
+vendor
+composer.lock
+
+# IDE
+.idea
+
+# Dev files
+hook.php
+!example/hook.php
+temp
+logs
+config.yaml
+.travis.yml

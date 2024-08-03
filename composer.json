@@ -1,0 +1,42 @@
+{
+  "name": "shopen-group/satis-hook",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jiří Brada",
+      "email": "jir.brada@gmail.com",
+      "homepage": "http://jbrada.cz"
+    },
+    {
+      "name": "Shopen Group s.r.o.",
+      "email": "info@shopen.cz",
+      "homepage": "https://shopen.cz"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "ShopenGroup\\SatisHook\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ShopenGroup\\SatisHook\\Tests\\": "tests"
+    }
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^7.1",
+    "symfony/yaml": "^4.1",
+    "symfony/process": "^4.1",
+    "nette/http": "^2.4",
+    "symfony/console": "^4.1",
+    "symfony/finder": "^4.1",
+    "monolog/monolog": "^1.24"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^0.10.0",
+    "symplify/easy-coding-standard": "^3.2.30",
+    "phpunit/phpunit": "^7"
+  }
+}
