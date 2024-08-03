@@ -108,7 +108,7 @@ class Config
      */
     public function getSatisConfig(): \stdClass
     {
-        $configString = utf8_encode((string) file_get_contents($this->getSatisConfigPath()));
+        $configString = (string)file_get_contents($this->getSatisConfigPath());
         return json_decode($configString);
     }
 
@@ -145,7 +145,7 @@ class Config
      */
     public function isSecretEnabled(): bool
     {
-        return (bool) $this->configArray['secret']['enabled'];
+        return (bool)$this->configArray['secret']['enabled'];
     }
 
     /**
