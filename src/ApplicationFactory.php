@@ -38,7 +38,7 @@ class ApplicationFactory
         $requestTypeResolver = new RequestTypeResolver;
 
 
-        $request = $requestFactory->createHttpRequest();
+        $request = $requestFactory->fromGlobals();
 
         return new Application($request, $response, $requestTypeResolver, $logger, $configPath, $hookFilesPath);
     }
