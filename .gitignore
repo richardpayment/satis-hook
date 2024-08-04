@@ -6,7 +6,6 @@ composer.lock
 .idea
 
 # Dev files
-hook.php
 !example/hook.php
 temp
 logs
