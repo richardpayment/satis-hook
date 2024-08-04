@@ -52,7 +52,7 @@ class SyncCommand extends Command
     /**
      * @return int|null|void
      */
-    public function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $output->writeln([
             '',

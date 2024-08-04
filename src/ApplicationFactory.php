@@ -27,8 +27,8 @@ class ApplicationFactory
         }
 
         $logger = new Logger('satis-hook');
-        $logger->pushHandler(new StreamHandler($logsPath . DIRECTORY_SEPARATOR . 'info.log', Logger::INFO, false));
-        $logger->pushHandler(new StreamHandler($logsPath . DIRECTORY_SEPARATOR . 'error.log', Logger::WARNING, false));
+        $logger->pushHandler(new StreamHandler($logsPath . DIRECTORY_SEPARATOR . 'info.log', 200, false));
+        $logger->pushHandler(new StreamHandler($logsPath . DIRECTORY_SEPARATOR . 'error.log', 300, false));
         if (is_int($argc) && $argc > 1 && php_sapi_name() === 'cli') {
             return new CliApplication($logger, $configPath, $hookFilesPath);
         }
